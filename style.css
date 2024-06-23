@@ -22,9 +22,9 @@ header {
 
 #painel {
     display: block;
-    margin: 20px auto; /* Centraliza a imagem e adiciona margem superior e inferior */
-    max-width: 50%; /* Garante que a imagem não ultrapasse 80% da largura da tela */
-    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px auto; 
+    max-width: 50%; 
+    height: auto; 
 }
 main {
     padding: 20px;
