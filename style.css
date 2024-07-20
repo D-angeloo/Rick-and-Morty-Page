@@ -118,15 +118,43 @@ main {
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #282c34;
-    color: white;
-    margin-top: 20px;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
-footer p {
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
     margin: 0;
-    font-size: 1em;
+    color: #dadada;
+    font-size: 14px;
+}
+
+.footer-content .social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-content .social-media li {
+    display: inline-block;
+}
+
+.footer-content .social-media a {
+    color: #FFFFFF;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-content .social-media a:hover {
+    color: #09e5b5;
 }
