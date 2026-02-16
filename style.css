@@ -1,4 +1,4 @@
-/* Estilos Globais */
+
 *{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -157,4 +157,26 @@ footer {
 
 .footer-content .social-media a:hover {
     color: #09e5b5;
+}
+
+@media (max-width: 600px) {
+    #painel {
+        max-width: 90%; /* a logo vai aumentar no mobile */
+    }
+
+    #formulario {
+        flex-direction: column; /* empilha label, input e botao */
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    #formulario input, 
+    #formulario button {
+        width: 100%; /* faz o botao e o campo de texto ficarem largos */
+        margin-right: 0;
+    }
+
+    #lista_personagens {
+        grid-template-columns: 1fr; /* força uma única coluna no celular */
+    }
 }

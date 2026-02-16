@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,29 +15,27 @@
 </head>
 <body>
     <main>
-    <img id="painel" src="thumb.png" alt="logo Rick and Morty">
+        <img id="painel" src="thumb.png" alt="Logo Rick and Morty">
 
-    <form id="formulario">
-        <label for="pesquisar">Search</label>
-        <input type="text" id="pesquisar" name="pesquisar" placeholder="Enter character name
-        ">
-        <button>Search</button>
-    </form>
+        <form id="formulario">
+            <label for="pesquisar">Search</label>
+            <input type="text" id="pesquisar" name="pesquisar" placeholder="Enter character name">
+            <button type="submit">Search</button>
+        </form>
+
+        <section id="lista_personagens" aria-live="polite"></section>
+    </main>
 
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 Rick and Morty Page. Alguns dos direitos reservados.</p>
             <ul class="social-media">
-                <li><a href="https://github.com/D-angeloo" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/davi-angelo-a0130a2a4/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/D-angeloo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/davi-angelo-a0130a2a4/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
             </ul>
         </div>
     </footer>
 
-
-    <section id="lista_personagens"></section>
-</main>
     <script src="./script.js"></script>
-   
 </body>
 </html>
