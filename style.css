@@ -159,24 +159,32 @@ footer {
     color: #09e5b5;
 }
 
+/* media query para telas de ate 600px (celulares) */
 @media (max-width: 600px) {
-    #painel {
-        max-width: 90%; /* a logo vai aumentar no mobile */
-    }
-
     #formulario {
-        flex-direction: column; /* empilha label, input e botao */
-        gap: 10px;
-        padding: 0 20px;
+        flex-direction: column;
+        align-items: stretch;  
+        padding: 0 20px;       
     }
 
-    #formulario input, 
-    #formulario button {
-        width: 100%; /* faz o botao e o campo de texto ficarem largos */
+    #formulario label {
         margin-right: 0;
+        margin-bottom: 8px;     
+        text-align: center;
     }
 
-    #lista_personagens {
-        grid-template-columns: 1fr; /* força uma única coluna no celular */
+    #formulario input {
+        margin-right: 0;        
+        margin-bottom: 15px;    
+        font-size: 1.1em;       
+    }
+
+    #formulario button {
+        width: 100%;            
+        padding: 15px;          
+    }
+
+    #painel {
+        max-width: 80%;         
     }
 }
