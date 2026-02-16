@@ -14,13 +14,18 @@
     <link rel="website icon" href="images.jfif" type="image/x-icon">
 </head>
 <body>
+    <div class="theme-switch">
+    <button id="botao-claro-escuro">
+        <i class="fas fa-moon"></i> Dark Mode
+    </button>
+    </div>
     <main>
         <img id="painel" src="thumb.png" alt="Logo Rick and Morty">
 
         <form id="formulario">
-            <label for="pesquisar">Search</label>
-            <input type="text" id="pesquisar" name="pesquisar" placeholder="Enter character name">
-            <button type="submit">Search</button>
+            <!-- <label for="pesquisar">Pesquisar</label> -->
+            <input type="text" id="pesquisar" name="pesquisar" placeholder="Nome do personagem">
+            <button type="submit">Pesquisar</button>
         </form>
 
         <section id="lista_personagens" aria-live="polite"></section>
@@ -28,7 +33,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Rick and Morty Page. Alguns dos direitos reservados.</p>
+            <p>&copy; 2024 Rick and Morty Page. Desenvolvido por Davi Angelo.</p>
             <ul class="social-media">
                 <li><a href="https://github.com/D-angeloo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/davi-angelo-a0130a2a4/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
@@ -36,6 +41,6 @@
         </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </body>
 </html>

@@ -1,3 +1,14 @@
+/* vou adicionar um root para configurar algumas coisas */
+:root {
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #212529;
+    --text-secondary: #6c757d;
+    --accent-color: #1376a0;
+    --portal-green: #97ce4c;
+    --card-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
 
 *{
     font-family: "Montserrat", sans-serif;
@@ -5,11 +16,44 @@
     font-style : normal;
 }
 
+#botao-claro-escuro {
+    background-color: var(--accent-color);
+    color: var(--bg-color); /* Inverte a cor para dar contraste */
+    border: 2px solid var(--portal-green);
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Transição suave e elástica */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#botao-claro-escuro:hover {
+    transform: scale(1.05);
+    background-color: var(--portal-green);
+    color: #121212;
+    box-shadow: 0 0 20px rgba(151, 206, 76, 0.4);
+}
+
+#botao-claro-escuro i {
+    transition: transform 0.5s ease;
+}
+
+/* Gira o ícone quando clica */
+#botao-claro-escuro:active i {
+    transform: rotate(360deg);
+}
+
 body {
-    background-color: #f0f0f0;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease;
 }
 
 header {
@@ -43,26 +87,32 @@ main {
 }
 
 #formulario input {
-    padding: 10px;
-    font-size: 1em;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
+    background: var(--card-bg);
+    border: 2px solid var(--text-secondary);
+    color: var(--text-color);
+    border-radius: 12px;
+    padding: 12px 20px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-right: 15px;
+}
+
+#formulario input:focus {
+    border-color: var(--portal-green);
 }
 
 #formulario button {
-    padding: 10px 20px;
-    font-size: 1em;
-    border: none;
-    background-color: #282c34;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+    background: var(--portal-green);
+    color: #0f172a;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 12px 25px;
+    box-shadow: 0 4px 14px rgba(151, 206, 76, 0.4);
     transition: background-color 0.3s ease;
 }
 
 #formulario button:hover {
-    background-color: #444b55;
+    background-color: #6e84a2;
 }
 
 #lista_personagens {
@@ -74,42 +124,46 @@ main {
 
 #lista_personagens div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #e0e0e0;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    text-align: center;    
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
 }
 
 #lista_personagens div:hover {
-    background-color: #b0b0b0;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px) scale(1.02);
+    border-color: var(--portal-green);
+    box-shadow: 0 20px 40px rgba(151, 206, 76, 0.2);
 }
 
 #lista_personagens h2 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #333;
+    color: var(--titulo-card, var(--text-color)); 
+    margin: 15px 0 10px 0;
+    font-size: 1.4em;
+    font-weight: 800;
 }
 
 #lista_personagens p {
     margin: 5px 0;
     font-size: 1em;
-    color: #666;
+    color: var(--text-secondary);
     text-align: center;
 }
 
 #lista_personagens img {
-    max-width: 100px;
+    display: block;
+    margin: 0 auto 15px auto;
+    border: 3px solid var(--portal-green);
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    border: 3px solid #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
 }
 
 #lista_personagens img:hover {
@@ -159,32 +213,97 @@ footer {
     color: #09e5b5;
 }
 
-/* media query para telas de ate 600px (celulares) */
+/* algumas novas configuraçoes */
+.status-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.status-bola {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.alive { background-color: #55cc44; }
+.dead { background-color: #d63d2e; }
+.unknown { background-color: #9e9e9e; }
+
+/* mensagem de erro */
+.msg-erro {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #f87171;
+    padding: 20px;
+    border-radius: 12px;
+    grid-column: 1 / -1;
+    text-align: center;
+    font-weight: bold;
+}
+
+#painel {
+    cursor: pointer; /* transforma a seta em "maozinha" */
+    transition: transform 0.2s ease;
+}
+
+#painel:active {
+    transform: scale(0.95); /* efeito de "clique" (encolhe um pouquinho) */
+}
+
+/* 2. MODO ESCURO */
+body.dark-mode {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #f8fafc; /* Branco gelo para leitura */
+    --titulo-card: #97ce4c; /* Verde portal para os nomes dos personagens */
+}
+
+body.dark-mode .msg-erro {
+    background: #450a0a;
+    color: #fca5a5;
+    border: 1px solid #ef4444;
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+}
+
+/* 3. APLICAÇÃO DAS VARIÁVEIS (o código fica mais limpo!!!) */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease;
+}
+
+#lista_personagens div {
+    background-color: var(--card-bg);
+    border: 1px solid transparent;
+}
+
+#lista_personagens h2 {
+    color: var(--titulo-card, #333); /* Usa o verde no dark e cinza no light */
+    margin: 15px 0 10px 0;
+    font-size: 1.4em;
+    font-weight: 800; /* Deixa o nome mais robusto */
+}
+
+body.dark-mode #lista_personagens div {
+    border: 1px solid var(--portal-green);
+}
+
+/* --- MEDIA QUERY (responsividade!!1) --- */
 @media (max-width: 600px) {
     #formulario {
         flex-direction: column;
-        align-items: stretch;  
-        padding: 0 20px;       
+        gap: 10px;
     }
-
-    #formulario label {
+    #formulario input, #formulario button {
+        width: 100%;
         margin-right: 0;
-        margin-bottom: 8px;     
-        text-align: center;
+        margin-bottom: 15px;
     }
-
-    #formulario input {
-        margin-right: 0;        
-        margin-bottom: 15px;    
-        font-size: 1.1em;       
-    }
-
-    #formulario button {
-        width: 100%;            
-        padding: 15px;          
-    }
-
     #painel {
-        max-width: 80%;         
+        max-width: 80%;
     }
 }
