@@ -49,6 +49,3 @@ Construí esta aplicação focando na **arquitetura limpa com JavaScript Vanilla
 **Ou clone o repositório:**
 ```bash
 git clone [https://github.com/D-angeloo/Rick-and-Morty-Page.git](https://github.com/D-angeloo/Rick-and-Morty-Page.git).
-
-
-
