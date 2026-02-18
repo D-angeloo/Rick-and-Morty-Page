@@ -1,4 +1,4 @@
-# 🧪 Rick and Morty Universe
+# 🧪 Rick and Morty Page. Desenvolvido por Davi Angelo :)
 
 ---
 
@@ -44,6 +44,11 @@ Construí esta aplicação focando na **arquitetura limpa com JavaScript Vanilla
 
 ## 📦 Como Executar
 
-**Clone o repositório:**
+**Clique no link para executar:** https://d-angeloo.github.io/Rick-and-Morty-Page/
+
+**Ou clone o repositório:**
 ```bash
-git clone [https://github.com/D-angeloo/Rick-and-Morty-Page.git](https://github.com/D-angeloo/Rick-and-Morty-Page.git)
+git clone [https://github.com/D-angeloo/Rick-and-Morty-Page.git](https://github.com/D-angeloo/Rick-and-Morty-Page.git).
+
+
+
