@@ -7,7 +7,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![API](https://img.shields.io/badge/Rick_and_Morty_API-green?style=for-the-badge&logo=icloud&logoColor=white)
 
-> Uma vitrine da minha jornada no desenvolvimento web, explorando a API oficial de Rick and Morty para construir uma enciclopédia de personagens interativa e performática.
+> Uma exploração da API de Rick and Morty para construir uma enciclopédia de personagens interativa e performática.
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.gif" width="100%">
 
@@ -35,10 +35,10 @@ Construí esta aplicação focando na **arquitetura limpa com JavaScript Vanilla
 
 | Funcionalidade | Descrição |
 | :--- | :--- |
-| ⚡ **Alta Performance** | Sem dependências externas, carregamento quase instantâneo. |
-| 📱 **Mobile First** | Design totalmente responsivo que se adapta a qualquer tela. |
-| 🧬 **Consumo de API** | Integração direta com a Rick and Morty API. |
-| 🎨 **Interface Limpa** | UI intuitiva focada na experiência do usuário. |
+| 🌙 **Modo Escuro** | Interface adaptável com suporte a tema Dark/Light para maior conforto visual. |
+| 💾 **LocalStorage** | Salva automaticamente as preferências do usuário localmente no navegador. |
+| 📱 **Mobile First** | Design totalmente responsivo que se adapta do smartphone ao desktop. |
+| 🧬 **Consumo de API** | Integração direta com a Rick and Morty API para dados em tempo real. |
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.gif" width="100%">
 
